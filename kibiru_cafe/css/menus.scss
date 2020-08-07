@@ -1,0 +1,173 @@
+
+@charset "utf-8";
+
+#menuBillboard{
+  width: 100%;
+  height: 250px;
+  background: #cdcdc0;
+}
+
+#menuImg{
+  width: 960px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+#coffee,#tea,#food,#sweets{
+  line-height: 1.6;
+}
+
+.menuList a{
+	color: #333;
+	text-decoration: none;
+}
+
+.menuList a:hover{
+	color: #999;
+	text-decoration: underline;
+}
+
+/* ここから記述 */
+
+/* --Coffeeメニュー */
+#coffee {
+  display: flex;
+  flex-wrap: wrap;
+
+  .cMenu {
+    background: #fee;
+    width: 280px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 5px;
+
+    h3 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+
+/* --Teaメニュー */
+
+#tea {
+  display: flex;
+
+  .tMenu {
+    background: #fee;
+    width: 437px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+    h3 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    div {
+      width: 237px;
+    }
+  }
+}
+
+/* --Foodメニュー */
+#food {
+  display: flex;
+  flex-wrap: wrap;
+
+  .fMenu {
+    background: #fee;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 5px;
+
+    &:first-of-type {
+      width: 910px;
+      display: flex;
+      align-items: center;
+
+      div {
+        width: 440px;
+      }
+
+      #burgerImg {
+        order: 1;
+      }
+    }
+
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      width: 280px;
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+/* --Sweetsメニュー */
+
+#sweets {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-start;
+
+
+  .sMenu {
+    background: #fee;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 5px;
+
+    &:first-of-type {
+      width: 595px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+
+      div {
+        width: 315px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      width: 280px;
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+/* ここまで記述 */
